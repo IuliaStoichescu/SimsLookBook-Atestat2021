@@ -1,0 +1,57 @@
+body{text-align: center ;background-image: url('../Poze/gif2.gif');background-repeat: no-repeat;background-size: cover;}
+nav ul ul{display: none;}
+nav ul li:hover > ul{display: flex;}
+nav ul{background: #efefef;background: linear-gradient(top,#efefef 0%,#fa98ea 100%);
+    background:-moz-linear-gradient(top,#6eecff 0%,#ff9fd4 100%);
+    background:-webkit-linear-gradient(top,#6eecff  0%,#ff9fd4 100%);
+    box-shadow: 0px 0px 9px rgba(255, 254, 254, 0.959);
+    padding:0 20px;
+    border-radius: 12px;
+    list-style: none;
+    position: relative;
+    display: inline-table;
+    display: flex;
+    transition: top 0.3s;
+}
+nav ul:after{content: ""; clear: both; display: block;}
+nav ul li{float: left;}
+
+nav ul li:hover {
+    background: #4b545f;
+    background: linear-gradient(top, #9fdcff 0%, #e8acff 40%);
+    background: -moz-linear-gradient(top, #ff9fd4 0%, #e8acff 40%);
+    background: -webkit-linear-gradient(top, #ff9fd4 0%,#e8acff 40%);
+}
+    nav ul li:hover a {
+        color: #fff;
+    }
+ 
+nav ul li a {
+    display: block;
+   padding: 20px 45px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: #eaeff8; text-decoration: none;
+    text-shadow:  0 0 15px rgb(255, 255, 255);
+}
+nav ul ul {
+background: mintcream; border-radius: 0px; padding: 0;
+position: absolute; top: 100%;
+}
+nav ul ul li {
+    float: none;
+    border-top: 1px solid #ff9cce;
+    border-bottom: 1px solid;
+    position: relative;
+}
+    nav ul ul li a {
+        padding: 15px 45px;
+        color: #fff;
+    }  
+        nav ul ul li a:hover {
+            background: #9743f7;
+        }
+         
+        nav ul ul ul {
+position: absolute; left: 100%; top:0;
+}

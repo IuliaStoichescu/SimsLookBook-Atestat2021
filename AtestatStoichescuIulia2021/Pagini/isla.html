@@ -1,0 +1,300 @@
+<html>
+    <head>
+  <title>Island Paradise🌊🏝️☀️</title>
+    </head>
+    <style>
+        ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background: rgb(70, 153, 174); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #faf8f5; 
+}
+
+body {
+  font-family: Verdana, sans-serif;
+    background:
+        linear-gradient(rgb(243, 203, 255), transparent),
+        linear-gradient(to top left, rgb(141, 242, 141), transparent),
+        linear-gradient(to top right, rgb(73, 111, 206), transparent);
+        background-blend-mode: screen;
+    background-repeat: no-repeat;
+    background-size: cover;     color: #fff;
+        z-index: 2;
+        text-shadow:  0 0 15px rgb(255, 255, 255);
+        margin: 0 8%;
+}
+h1{  font-family: 'Luckiest Guy', cursive;font-style: italic; }
+p{font-family: 'Luckiest Guy', cursive;font-style: italic;}
+li{font-family: 'Luckiest Guy', cursive;font-style: italic;}
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+    </style>
+    <body>
+        <h1 style="text-align:center">The Sims 3: Island Paradise</h1>
+        <HR width="50%" color="white" size="4" align="center"> <br>
+            <p style="text-align:center">
+               ,, Aventurile insulare din paradis vă așteaptă in Sims! De la explorarea insulelor în bărci casnice complet personalizabile, până la crearea unei experiențe de resort de cinci stele, Sims-ul dvs. va iubi stilul de viață tropical fără griji. Simsii nautici pot naviga între insule și se pot scufunda in apă pentru a descoperi comoara scufundată - sau poate chiar să se împrietenească cu o sirenă! Cu caracteristici inovatoare nemaivăzute până acum în franciza The Sims PC și o lume cu noi posibilități pe uscat și pe mare, Simaii vor profita de avantajele propriului lor paradis insular."</p>
+  
+               <div class="row">
+                <div class="column">
+                  <img src="../Poze/i1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                  <img src="../Poze/i3.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                  <img src="../Poze/i4.png" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                </div>
+                <div class="column">
+                  <img src="../Poze/i5.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                </div>
+              </div>
+              
+              <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+              
+                  <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="../Poze/i1.jpg" style="width:100%">
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="../Poze/i3.jpg" style="width:100%">
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="../Poze/i4.png" style="width:100%">
+                  </div>
+                  
+                  <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="../Poze/i5.jpg" style="width:100%">
+                  </div>
+                  
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                  </div>
+              
+              
+                  <div class="column">
+                    <img class="demo cursor" src="../Poze/i1.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="../Poze/i3.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="../Poze/i4.png" style="width:100%" onclick="currentSlide(3)" alt="">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="../Poze/i5.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+                  </div>
+                </div>
+              </div>
+              <br  />
+              <h1>Caracteristici</h1>
+              <HR width="50%" color="white" size="4" align="left"> <br>
+          <ul type="square">   
+         <li>Navigați spre aventură: Simsii pot decola de-a lungul valurilor pentru a descoperi noi insule și a explora ca niciodată, fie cu barca cu vâsle, cu barca cu motor sau cu o barcă de casa complet personalizabilă! Ce vei descoperi?</li>   
+           <li>Construiți cea mai bună stațiune din insule: specializați-vă în tobogane de apă și mese tip bufet pentru a atrage familiile, construiți baruri la piscină unde Sims singuri se pot întâlni și flirta sau creați un refugiu romantic dotat cu bungalouri. Modul în care vă alegeți facilitățile și stabiliți prețurile vă va afecta recenziile și profiturile. Obțineți un rating de stele suficient de mare și în curând veți fi lansat în Simoleons!</li>     
+    <li>   Viața este o plajă: vezi ce surprize așteaptă sub mare! Pe măsură ce Sim-urile își dezvoltă abilitățile de snorkeling și scufundări, se pot găsi pe malul unei insule noi sau pot descoperi o comoară pierdută de mult.</li>  
+      <li>  Barcă cu barca dulce: indiferent dacă Sims-urilor iubesc apa sau pur și simplu adoră explorarea, există o gamă de bărci casnice complet personalizabile care pot fi mutate în orice port deschis. În cazul în care Sims-ul dvs. se satură de vedere, poate pur și simplu naviga pe o nouă locație!</li>  
+ <li> Noi modalități de a construi: noile fundații stiltate oferă Sim-urilor cele mai bune din ambele lumi - o casă care este parțial pe apă și parțial pe uscat. Construiește o stațiune, creează bărci casnice călătoare și personalizează-ți propriul paradis insular pentru Sims!</li> 
+             </ul> 
+             <h1>Sirene</h1>
+             <HR width="50%" color="white" size="4" align="left"> <br>
+              <a target="index.html" href="../Poze/sirena1.png">
+                <img class="img1" align="right" src="../Poze/sirena1.png"></a> <br   /> <p>-Un Sim poate deveni o sirenă prin ingerarea algelor mermadice, care poate fi obținută fie devenind prieteni buni cu o sirenă și folosind interacțiunea „Întrebați despre piesele de pește” în timp ce atât Sim, cât și sirena sunt sub apă, sau achiziționând „Mermadic Kelp” recompensă pe viață pentru 25.000 de puncte de fericire pe viață.</p>
+            <p>
+              -Sirenele au aceleași nevoi ca și Simsii obișnuiti, cu două diferențe principale:
+              <ul>
+              <li>Hidratare: în locul igienei, există o nevoie de „hidratare”, similară cu apa pentru un PlantSim. Acest lucru poate fi satisfăcut înotând în ocean sau într-o piscină, folosind dușul sau cada sau relaxându-vă într-o cadă cu hidromasaj. Dacă este instalat The Sims 3: Seasons, se pot hidrata și stând în ploaie. Deshidratarea va face ca Sim-ul să se usuce, dându-le un spirit negativ. În cele din urmă, vor dispărea și, dacă un alt Sim nu va stropi cu apă, vor muri.</li>
+           <li>Foamea: Sirenele nu primesc multă energie din mesele normale. În schimb, au nevoie de pește și alge. Peștele poate fi capturat din pescuit sau în timpul scufundărilor și poate fi consumat crud. Dacă o sirenă are trăsătura vegetariană, consumul de pește îi va face să fie greață. Alge poate fi recoltat din zonele de scufundare sau cumpărat de la băcănie. Dacă nevoia de foame a unei sirene este foarte scăzută, este suficient să mănânci două bucăți de varză pentru a o completa complet.</li>   </p>
+            </ul><br  />
+            <h1>Trailer</h1>
+            <HR width="50%" color="white" size="4" align="left"> <br>
+            <div style="text-align:center;"> <iframe width="1500" height="650" src="https://www.youtube.com/embed/ooi3TuWyXPU"></iframe></div>
+            <a href="index.html"><p><b>Du-ma Înapoi</b></p></a>
+            <script>
+              function openModal() {
+                document.getElementById("myModal").style.display = "block";
+              }
+              
+              function closeModal() {
+                document.getElementById("myModal").style.display = "none";
+              }
+              
+              var slideIndex = 1;
+              showSlides(slideIndex);
+              
+              function plusSlides(n) {
+                showSlides(slideIndex += n);
+              }
+              
+              function currentSlide(n) {
+                showSlides(slideIndex = n);
+              }
+              
+              function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("demo");
+                var captionText = document.getElementById("caption");
+                if (n > slides.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                captionText.innerHTML = dots[slideIndex-1].alt;
+              }
+              </script>
+
+            </body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Primavara🌸</title>
+        <style>
+        body{ font-style: italic;
+          
+            justify-content: center;
+            align-items: center;  
+            min-height: 100vh;
+            background: radial-gradient(ellipse at bottom, #ffb8dc 0%,#c1fcd2 100%);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0 5%;
+          }
+          h1{  font-family: 'Luckiest Guy', cursive;font-style: italic;font-size:xx-large; color: rgb(255, 142, 217);
+        z-index: 2;
+        text-shadow:  0 0 15px rgb(247, 254, 255);}
+        a:link {
+  color: rgb(242, 89, 216);
+}  
+a:visited {
+  color: rgb(75, 233, 230);
+}
+a:hover {
+  color: rgb(139, 81, 233);
+}
+
+
+          p{ color: #fff;
+        z-index: 2;
+        text-shadow:  0 0 15px rgb(255, 255, 255);}
+        * {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.container {
+  position: relative;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+
+.cursor {
+  cursor: pointer;
+}
+
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -100px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover { opacity: 1;}
+          </style>
+    </head>
+    <body>
+     <h1 style="text-align:center"><big><bold></bold>Catalog de modă-primavară</big></h1>
+     <HR width="30%" color="white" size="1" align="center"> 
+      <div class="container">
+        <div class="mySlides">
+          <div class="numbertext">1 / 8</div>
+          <img src="../Poze/s77.png" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">2 / 8</div>
+          <img src="../Poze/s78.png" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">3 / 8</div>
+          <img src="../Poze/s79.png" style="width:100%">
+        </div>
+          
+        <div class="mySlides">
+          <div class="numbertext">4 / 8</div>
+          <img src="../Poze/s80.png" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <div class="numbertext">5 / 8</div>
+          <img src="../Poze/s81.png" style="width:100%">
+        </div>
+          
+        <div class="mySlides">
+          <div class="numbertext">6 / 8</div>
+          <img src="../Poze/s82.png" style="width:100%">
+        </div>
+           
+        <div class="mySlides">
+          <div class="numbertext">7 / 8</div>
+          <img src="../Poze/s83.png" style="width:100%">
+        </div>
+           
+        <div class="mySlides">
+          <div class="numbertext">8 / 8</div>
+          <img src="../Poze/s84.png" style="width:100%">
+        </div>
+          
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+      
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="../Poze/s77.png" style="width:100%" onclick="currentSlide(1)" alt="E timpul pentru pantaloni răcoroși!">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="../Poze/s78.png" style="width:100%" onclick="currentSlide(2)" alt="Te îmbraci sport chiar daca ieși numai pentru înghețată">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="../Poze/s79.png" style="width:100%" onclick="currentSlide(3)" alt="E frig sau cald? Nu chiar știm">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="../Poze/s80.png" style="width:100%" onclick="currentSlide(4)" alt="În sfârșit putem purta crop top-uri">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="../Poze/s81.png" style="width:100%" onclick="currentSlide(5)" alt="">
+          </div>    
+          <div class="column">
+            <img class="demo cursor" src="../Poze/s82.png" style="width:100%" onclick="currentSlide(6)" alt="">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="../Poze/s83.png" style="width:100%" onclick="currentSlide(7)" alt="">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="../Poze/s84.png" style="width:100%" onclick="currentSlide(8)" alt=" ">
+          </div>
+        </div>
+      </div>
+      <a href="index.html"><p><b>Înapoi</b></p></a>
+      
+      <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+      }
+      </script> 
+   
+    <body>
+   
+    </body>
+</html>

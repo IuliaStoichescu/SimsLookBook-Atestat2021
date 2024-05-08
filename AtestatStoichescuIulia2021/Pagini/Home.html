@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+<style>
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: rgb(214, 188, 255); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+   h1 {
+        position: relative;
+        margin: 1rem 0 0;
+        font-family: 'Luckiest Guy', cursive;font-style: italic; 
+        color: rgb(255, 255, 255);
+        z-index: 2;
+        text-shadow:  0 0 15px rgb(247, 254, 255);
+        font-size: xxx-large;
+        }
+      .p1{font-family: 'Luckiest Guy', cursive;font-style: italic; text-shadow: #fff;color: #fff;  text-shadow:  0 0 15px rgb(247, 254, 255); background-color: #D29DFF}  
+body {
+  font-style: italic;
+  text-align: center;
+  justify-content: center;
+  align-items: center;  
+  min-height: 100vh;
+  background-color: #ffc1f0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 5%;
+}
+
+* {
+  box-sizing: border-box;
+}
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; 
+  display: flex;
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  -ms-flex: 25%; 
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.hovereffect {
+  width: 100%;
+  height: 14%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background: -webkit-linear-gradient(45deg, #45ddff 0%, #45ddff 100%);
+  background: linear-gradient(45deg, #ffc1f0 0%,#ffc1f0 100%);
+ 
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  padding: 3rem;
+  text-align: left;
+ 
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  max-width: none;
+  width: calc(100% + 60px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+  transition: opacity 0.35s, transform 0.45s;
+  -webkit-transform: translate3d(-40px,0,0);
+  transform: translate3d(-40px,0,0);
+ 
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
+  font-size: 16px;
+  background-color: transparent;
+  padding: 15% 0 10px 0;
+  text-align: left;
+
+}
+
+.hovereffect .overlay:before {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  border: 1px solid #fff;
+  content: '';
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+  transition: opacity 0.35s, transform 0.45s;
+  -webkit-transform: translate3d(-20px,0,0);
+  transform: translate3d(-20px,0,0);
+ 
+}
+
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
+  transition: opacity 0.35s, transform 0.45s;
+  -webkit-transform: translate3d(-10px,0,0);
+  transform: translate3d(-10px,0,0);
+  
+}
+
+.hovereffect:hover img {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+ 
+}
+
+.hovereffect:hover .overlay:before,
+.hovereffect:hover a, .hovereffect:hover p {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  
+}
+</style>
+<body>
+
+<div class="header">
+  <h1 contenteditable spellcheck="false">─Welcome to Sims 3─</h1>
+  <p class="p1">-Locul unde iti poti crea propria ta lume-</p>
+</div>
+
+<div class="row"> 
+  <div class="column">
+    <div class="hovereffect"><img class="img-responsive" src="../Poze/winter.jpg" style="width:100%"> <div class="overlay">
+      <h2>Anotimpuri</h2>
+      <p> <a href="season.html" target="index.html">Vezi aici</a></p>
+    </div>
+  </div>
+<div class="hovereffect"> <img class="img-responsive" src="../Poze/sims.jpg" style="width:100%"><div class="overlay">
+  <h2>Petreceri</h2>
+  <p> <a href="uni.html" target="index.html">Sims 3 University Pack</a></p>
+</div>
+</div>
+    <div class="hovereffect"><img class="img-responsive" src="../Poze/model.jpg" style="width:100%">
+      <div class="overlay">
+        <h2>Moda</h2>
+        <p><a href="moda.html">💃</a></p>
+      </div>
+    </div>
+    <div class="hovereffect"><img class="img-responsive" src="../Poze/poza2.jpg" style="width:100%">
+      <div class="overlay">
+      <h2>Orase</h2>
+      <p><a href="orase.html">Lumile sims-ului</a></p>
+    </div>
+  </div>
+  <div class="hovereffect"><img class="img-responsive" src="../Poze/poza1.jpg" style="width:100%">
+    <div class="overlay">
+      <h2>Familii</h2>
+    </div>
+  </div>
+  <div class="hovereffect"><img class="img-responsive" src="../Poze/sims3.gif" style="width:100%">
+    <div class="overlay">
+      <h2>Intro-ul jocului</h2>
+      <p><a href="Sims 3.html">Aici👀</a></p>
+    </div>
+  </div>
+  <div class="hovereffect"><img class="img-responsive" src="../Poze/cat.jpg" style="width:100%">
+    <div class="overlay">
+      <h2>Animale</h2>
+      <p><a href="pets.html" target="index.html">Sims 3 Pets🐹</a></p>
+    </div>
+  </div>
+  </div>
+  <div class="column">
+
+     <div class="hovereffect"><img class="img-responsive" src="../Poze/poza3.jpg" style="width:100%">
+      <div class="overlay">
+        <h2>Talente</h2>
+        <p target="index.html"><a href="https://sims.fandom.com/wiki/Skill">Skill-urile din sims</a></p>
+      </div>
+    </div>
+    <div class="hovereffect"><img class="img-responsive" src="../Poze/beach.jpg" style="width:100%"> <div class="overlay">
+      <h2>Destinatii</h2>
+    </div></div>
+    <div class="hovereffect"><img class="img-responsive"  src="../Poze/couch.jpg" style="width:100%">
+      <div class="overlay">
+        <h2>Timp de relaxare</h2>
+      </div></div>
+    <div class="hovereffect"><img class="img-responsive" src="../Poze/supernatural.jpg" style="width:100%">
+      <div class="overlay">
+        <h2>Puteri supranaturale</h2>
+        <p><a href="sup.html" target="index.html">Sims 3 Supernatural</a></p>
+      </div></div>
+      <div class="hovereffect"><img class="img-responsive" src="../Poze/sirena.png" style="width:100%">
+        <div class="overlay">
+          <h2>Sirene!</h2>
+          <p><a href="isla.html" target="index.html">Sims 3 Island Paradise</a></p>
+        </div></div>
+        <div class="hovereffect"><img  class="img-responsive" src="../Poze/copii.jpg" style="width:100%">
+          <div class="overlay">
+            <h2>Copii</h2>
+            <p>Sims 3 Generations</p>
+          </div></div>
+  </div>  
+  <div class="column">
+    <div class="hovereffect"><img class="img-responsive" src="../Poze/dance.jpg" style="width:100%">  <div class="overlay">
+      <h2>Locul pe care il numesti acasa</h2>
+    </div></div>
+    <div class="hovereffect"> <img class="img-responsive" src="../Poze/hotel.png" style="width:100%">
+      <div class="overlay">
+        <h2>Hoteluri</h2>
+        <p><a href="isla.html" target="index.html">Sims 3 Island Paradise</a></p>
+      </div></div>
+      <div class="hovereffect"> <img  class="img-responsive" src="../Poze/viitorul.jpg" style="width:100%">
+        <div class="overlay">
+          <h2>Calatoreste in timp</h2>
+          <p><a href="future.html" target="index.html">Sims 3 Into The Future</a></p>
+        </div></div>
+        <div class="hovereffect"><img  class="img-responsive" src="../Poze/distractie.jpg" style="width:100%">
+          <div class="overlay">
+            <h2>Festivaluri</h2>
+            <p><a href="season.html" target="index.html">Sims 3 Seasons</a></p>
+          </div></div>
+          <div class="hovereffect"><img  class="img-responsive" src="../Poze/arbore.png" style="width:100%"> 
+            <div class="overlay">
+              <h2>Generatii</h2>
+            </div></div>
+            <div class="hovereffect"><img class="img-responsive" src="../Poze/robot.png" style="width:100%">
+              <div class="overlay">
+                <h2>Roboti</h2>
+                <p><a href="future.html" target="index.html">Sims 3 Into The Future</a></p>
+              </div></div>
+              <div class="hovereffect"><img img class="img-responsive" src="../Poze/celebrity.png" style="width:100%">
+                <div class="overlay">
+                  <h2>Celebritati</h2>
+                  <p><a href="https://sims.fandom.com/wiki/The_Sims_3:_Late_Night">Sims 3 Late Night</a></p>
+                </div></div>
+  </div>
+  <div class="column">
+    <div class="hovereffect"><img class="img-responsive" src="../Poze/hug.jpg" style="width:100%">
+      <div class="overlay">
+        <p>Conexiuni</p>
+      </div></div>
+      <div class="hovereffect"><img class="img-responsive" src="../Poze/insula.png" style="width:100%">
+        <div class="overlay">
+          <h2>Insule</h2>
+          <p><a href="isla.html" target="index.html">Sims 3 Island Paradise</a></p>
+        </div></div>
+        <div class="hovereffect"> <img class="img-responsive" src="../Poze/relatii.jpg" style="width:100%">
+          <div class="overlay">
+            <h2>Relatii</h2>
+          </div></div>
+          <div class="hovereffect"> <img  class="img-responsive" src="../Poze/sarbatori.jpg" style="width:100%">
+            <div class="overlay">
+              <h2>Sarbatori</h2>
+              <p><a href="season.html" target="index.html">Sims 3 Seasons</a></p>
+            </div></div>
+            <div class="hovereffect"><img class="img-responsive" src="../Poze/party.jpg" style="width:100%">
+              <div class="overlay">
+                <h2>Petreceri</h2>
+                <p>Sims 3 Generations</p>
+              </div></div>
+              <div class="hovereffect"><img class="img-responsive" src="../Poze/camp.jpg" style="width:100%">
+                <div class="overlay">
+                  <h2>Foc de tabara</h2>
+                </div></div>
+  </div>
+</div>
+</body>
+</html>

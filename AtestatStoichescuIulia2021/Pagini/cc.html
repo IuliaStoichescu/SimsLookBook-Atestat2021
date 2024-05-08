@@ -1,0 +1,278 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+      <title>CC-Custom Content</title>
+      <style>
+       a:link {
+  color: rgb(242, 89, 216);
+}  
+a:visited {
+  color: rgb(75, 233, 230);
+}
+a:hover {
+  color: rgb(139, 81, 233);
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background: rgb(233, 83, 195); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #96308d; 
+}
+          @font-face {
+  font-family: Clip;
+  src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+}
+
+body {
+  background-color: #141114;
+  background-image: linear-gradient(335deg, black 23px, transparent 23px),
+    linear-gradient(155deg, black 23px, transparent 23px),
+    linear-gradient(335deg, black 23px, transparent 23px),
+    linear-gradient(155deg, black 23px, transparent 23px);
+  background-size: 58px 58px;
+  background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+}
+
+
+
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+  28%,
+  33% {
+    color: #ff65bd;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #ff2483;
+    text-shadow: none;
+  }
+}
+
+.flicker {
+  animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+  0% {
+    color: #6b1839;
+    text-shadow: none;
+  }
+  100% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+          h1{font-family: 'Luckiest Guy', cursive;font-style: italic; 
+            
+             color: #ffe6ff;
+            text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+           -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+             0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+             animation: shine 2s forwards, flicker 3s infinite;}
+        p{font-family: 'Luckiest Guy', cursive;font-style: italic; color: #fff;
+        z-index: 2;
+        text-shadow:  0 0 15px rgb(79, 79, 79);}
+        li{color: #fff;
+        }
+          body{ margin: 0 8%;}
+      </style>
+    </head>
+    <body>
+        <div class="sign">
+            <h1><span class="fast-flicker">Custom content</span></h1></div>
+      <HR width="50%" color="white" size="1" align="left"> 
+        <br  />
+        <p align="justify">
+            <b>○ Custom content</b> este conținut personalizat generat de fani, creat de jucători pentru jucători. Conținutul personalizat a făcut întotdeauna parte din seria The Sims, cel puțin pentru jocurile PC și Mac din acesta. În general, termenul „conținut personalizat” nu a fost folosit atunci când se vorbea despre conținut pentru The Sims, dar s-au făcut multe și încă sunt disponibile multe. Odată cu lansarea The Sims 2, EA / Maxis a început să se refere la conținutul creat de utilizator drept „conținut personalizat” și la utilizarea prinsă.</p>
+          
+            
+          <p> ○  Sims nu face distincție între conținutul personalizat și conținutul Maxis, dar Sims 2 și Sims 3 fac. În aceste jocuri, conținutul personalizat este marcat cu o „stea”, care este practic un asterisc. În The Sims 4, conținutul personalizat este marcat de o pictogramă cheie.</p> 
+            
+           <p> ○  În The Sims 2, jucătorii care doresc să utilizeze conținut personalizat trebuie să-l activeze în mod specific și trebuie să-l reactiveze după adăugarea unui nou pachet de expansiune sau a unui pachet de lucruri. Pentru jucătorii cu viață de noapte sau mai târziu sau orice pachet de lucruri, dialogul care permite acest lucru trebuie să fie activat în Opțiuni de joc. Jucătorii care doresc să utilizeze modul de cumpărare personalizat și obiectele din modul de construire trebuie, de asemenea, să intre în Opțiuni de joc și să spună jocului să afișeze conținut personalizat în cataloage. Jucătorii care doresc să recoloreze Maxis cumpără și construiesc obiecte trebuie să utilizeze pachetul Color Enabler de pe modthesims.info.</p>
+            
+           <p> ○  Instalarea conținutului personalizat în The Sims 3 necesită câteva instrucțiuni și cadru. Citiți instrucțiunile de <a href="https://modthesims.info/wiki.php?title=Game%20Help:TS3%20CC%20Basics">aici</a> pentru a afla cum să obțineți conținut personalizat pentru a lucra în joc.</p><br   />
+            <br    />
+            <div class="sign">   <h1><span class="fast-flicker">Ce este Custom content?</span></h1></div>
+        <HR width="50%" color="white" size="1" align="left"> 
+            <br   />
+            <p>○ O mulțime de conținut personalizat le permite jucătorilor să facă modificări estetice la Sims; piei pentru Sims, îmbrăcăminte, accesorii și genetică (culoarea părului, stilurile de păr, culoarea ochilor, culoarea pielii etc.) pentru The Sims 2, The SIms 3 și The Sims 4. Piei / hainele folosesc adesea ochiuri personalizate. </p>  
+
+            <p>  ○ Obiectele sunt un alt tip popular de conținut personalizat. Personalizarea unui obiect implică adesea recolorarea totală sau parțială a acestuia, dar poate implica schimbarea formei acestuia. Unii creatori au realizat chiar ceea ce sunt efectiv obiecte noi, iar creatorii cu abilități de programare pot chiar să facă obiecte funcționale complet noi. </p> 
+                
+             <p>  ○ Pereții și podelele personalizate au fost întotdeauna populare, la fel ca loturile, casele și clădirile personalizate. Sims 2 permite terenuri personalizate (realizate în SimCity 4), cartiere și sub-cartiere. Instrumentul Create a World pentru Sims 3 permite crearea de terenuri și cartiere personalizate.</p>  
+                
+             <p>  ○ O anumită subclasă de conținut personalizat este înlocuirea implicită. În ciuda numelui, un înlocuitor implicit nu înlocuiește literalmente nimic din fișierele jocului. În schimb, se face o înlocuire implicită, astfel încât să fie folosită în locul unuia dintre elementele implicite ale jocului. Din acest motiv, este posibil ca un înlocuitor implicit să nu afișeze indicatorul de conținut personalizat. Articolele de înlocuire implicită sunt adesea folosite pentru a rezolva problemele pe care jucătorii le pot avea cu un articol implicit. Unii jucători folosesc, de asemenea, înlocuiri implicite pentru obiecte genetice, cum ar fi ochii. </p>
+                
+               <p> ○ Unele conținuturi pentru Sims au fost ceea ce jucătorii din jocurile ulterioare ar recunoaște ca moduri, dar majoritatea modificărilor jocului pentru Sims au luat forma „obiectelor sparte”, obiecte care au fost modificate pentru a avea funcții și interacțiuni noi. Spargerea obiectelor a fost frecvent un mod de a evita limitele motorului de joc. De exemplu, există obiecte piratate care permit jucătorilor să mute Sims de la o familie la alta fără a utiliza interacțiunile „Căsătorie” sau „Mută în” sau să le elimine din joc. Cu puțină creativitate, jucătorii ar putea folosi aceste obiecte pentru a-i muta pe Sims în propriile case, chiar dacă jocul în sine nu prevedea acest lucru. Au existat, de asemenea, un conținut promoțional creat pentru The Sims sub formă de conținut personalizat, cum ar fi McDonald's Food Kiosk.</p> 
+                
+               <p> ○ „Modding” a intrat într-adevăr în propriul său joc cu Sims 2, iar modificările pentru Sims 2, Sims 3 și Sims 4 pot face totul, de la rezolvarea problemelor și a supărărilor până la modificarea jocului.</p><br   />
+               <div class="sign">  <h1><span class="fast-flicker">De unde se descarcă cc?</span></h1></div>
+               <HR width="50%" color="white" size="1" align="left"> 
+                <br  />
+                <p>○ Aceasta este doar o listă foarte scurtă cu unele dintre cele mai populare locuri care au CC.  </p>
+                <ul type="square">
+                    <li>The Sims 3 Exchange</li>
+                    <li><a href="https://www.modthesims.info/">ModTheSims</a></li>
+                    <li><a href="http://www.thesimsresource.com/">The Sims Resource</a></li>
+                    <li><a href="http://www.simbology.com/">Simbology</a></li>
+                    <li><a href="https://sssvitlans.tumblr.com/sims3cc">Lana cc Finds</a></li>
+                </ul>
+               
+            </body>
+</html>

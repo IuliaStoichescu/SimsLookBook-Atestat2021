@@ -1,0 +1,22 @@
+body{ text-align:center;background-image: url('../Poze/gif2.gif');  background-repeat: no-repeat;
+    background-size: cover; font-size: xxx-large;}
+        
+    .bubbles {
+        display: inline-block;
+        font-family: arial;
+        position: relative;
+        }
+        
+         h1 {
+        position: relative;
+        margin: 1rem 0 0;
+        font-family: 'Luckiest Guy', cursive;font-style: italic; 
+        color: #fff;
+        z-index: 2;
+        text-shadow:  0 0 15px rgb(255, 255, 255);
+        }
+     
+        audio{margin: 1px 1px 1px 1600px;}
+        
+           
+    

@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <title>University life🏛️</title>
+    </head>
+    <style>
+        body{background-image: url('https://www.itl.cat/pngfile/big/317-3178073_aesthetic-pastel-wallpaper-desktop.png'); background-repeat: no-repeat; background-size: cover; margin: 0 8%;}
+        h1,p,ul,li{  font-family: 'Luckiest Guy', cursive;font-style: italic;  z-index: 2;
+        text-shadow:  0 0 15px rgb(255, 255, 255);
+        margin: 0 8%; color: rgb(255, 255, 255);font-size: x-large;}
+        h1{font-size: xx-large;}
+        .column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.container {
+  position: relative;
+  display: none;
+}
+
+
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+    </style>
+    <body>
+        <h1 style="text-align:center">Universitatea</h1>
+        <HR width="50%" color="white" size="4" align="center"> <br>
+        <p style="text-align:center">,,Sunt simsii tai pregătiti pentru cele mai bune momente ale vietii lor? Plecarea la universitate deschide noi oportunități, de la conexiuni sociale până la creșterea carierei. De la activități de clasă la obiecte majore, Sim-ul tău va găsi noi modalități de a învăța! Și universitatea nu înseamnă doar să inveti. Alăturați-vă unui protest, cochetați la o petrecere a focului - există multe de învățat în afara prelegerilor de la sindicatul studențesc. Cu locații noi precum bowling-ul și SimBurger de explorat și noi activități precum suc pong și picturi cu picturi cu spray pentru a vă bucura, Sim-urile dvs. vor avea cu siguranță timpul din viața lor!"</p> <br   />
+      <div style="text-align:center;"> <iframe width="1500" height="650" src="https://www.youtube.com/embed/0w7hU7gAe00"></iframe></div>
+      <br  />
+      <p>
+        The Sims 3: University Life este al nouălea pachet de expansiune pentru The Sims 3. După zvonurile care circulă prin listări și ratinguri, Electronic Arts a anunțat pachetul de expansiune cu o oră înainte ca chatul live să fie difuzat pe 8 ianuarie 2013. Există, de asemenea, o ediție limitată disponibilă, care include statuia Partaeus Maximus. Viața universitară a fost lansată pe 5 martie 2013 în America de Nord, 7 martie în Europa și 8 martie în Regatul Unit.
+        
+        Tema vieții universitare este facultatea, foarte asemănătoare cu cea din The Sims 2: University, oferindu-le astfel Simsului o „experiență de facultate” în timp ce se aflau la universitate. A adus multe funcții care se întorc din pachetele de expansiune ale lui The Sims 2, precum și a introdus noi caracteristici pentru The Sims 3. Pachetul și lumea sa sunt compatibile cu Seasons.</p>
+       <br> <h1>Galerie de imagini</h1> 
+        <HR width="50%" color="white" size="1" align="left">  
+            <br> 
+            <div class="row">
+                <div class="column">
+                  <img src="../Poze/u1.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                  <img src="../Poze/u2.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                  <img src="../Poze/u3.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+                </div></div>
+            </div>
+                <div class="row">
+                <div class="column">
+                  <img src="../Poze/u4.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+                </div>
+              
+                <div class="column">
+                  <img src="../Poze/u5.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                  <img src="../Poze/u6.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+                </div>  </div>  </div>
+            </div>
+                <div class="row">
+                <div class="column">
+                  <img src="../Poze/u7.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                  <img src="../Poze/u8.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+                </div>
+            
+                <div class="column">
+                  <img src="../Poze/u9.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+                </div></div></div>
+                <div class="row">
+                <div class="column">
+                  <img src="../Poze/u10.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                  <img src="../Poze/u11.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                  <img src="../Poze/u12.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+                </div>
+                </div>
+            </div>
+            <a href="index.html"><p><b>Înapoi</b></p></a>
+              <div class="container">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <img id="expandedImg" style="width:100%">
+                <div id="imgtext"></div>
+              </div>
+              
+              <script>
+              function myFunction(imgs) {
+                var expandImg = document.getElementById("expandedImg");
+                var imgText = document.getElementById("imgtext");
+                expandImg.src = imgs.src;
+                imgText.innerHTML = imgs.alt;
+                expandImg.parentElement.style.display = "block";
+              }
+              </script>
+              
+    </body>
+</html>

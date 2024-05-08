@@ -1,0 +1,103 @@
+<html>
+    <head>
+
+    </head>
+    <style>
+body {
+ background-image: url('../Poze/gif1.gif');  background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.container {
+  max-width: 1125px;
+  margin: 0 auto;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  width: 200px;
+  height: 230px;
+  margin: 10px;
+  text-decoration: none;
+}
+img{width: 200px;
+  height: 230px;
+  margin: 10px;}
+.gallery-item img {
+  position: absolute;
+}
+
+.text-wrapper {
+  position: relative;
+  width: 200px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+}
+
+.text-wrapper:hover {
+  transition: all 0.8s ease;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+}
+
+.name {
+  font-size: 1.5em;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .text-wrapper {
+    opacity: 1;
+    justify-content: flex-end;
+    text-shadow: 1px 1px 1px #000;
+  }
+  .title {
+    margin-bottom: 1em;
+  }
+}
+    </style>
+    <body>
+        <div class="container">
+  
+            <div class="gallery">
+              <a class="gallery-item" href="#"><img src="../Poze/c1.png" alt="Headshot of George Washington"><span class="text-wrapper"><span class="name">Sylvia Chandler</span><span class="title">Veterinar</span></span></a>
+              
+              <a class="gallery-item" href="#"><img src="../Poze/c2.png" alt="Headshot of John Adams"><span class="text-wrapper"><span class="name">John Adams</span><span class="title">Avocat</span></span></a>
+              
+              <a class="gallery-item" href="#"><img src="../Poze/c3.png" alt="Headshot of Thomas Jefferson"><span class="text-wrapper"><span class="name">Michelle Winston</span><span class="title">Actrita</span></span></a>
+                
+              <a class="gallery-item" href="#"><img src="../Poze/c4.png" alt="Headshot of James Madison"><span class="text-wrapper"><span class="name">Shea Chandler</span><span class="title">Model</span></span></a>
+          
+              <a class="gallery-item" href="#"><img src="../Poze/c5.png" alt="Headshot of James Monroe"><span class="text-wrapper"><span class="name">Andrea Chain</span><span class="title">Developer</span></span></a>
+          
+              <a class="gallery-item" href="#"><img src="../Poze/c6.png" alt="Headshot of Andrew Jackson"><span class="text-wrapper"><span class="name">Jayden Hodge</span><span class="title">Doar un visator</span></span></a>
+          
+              <a class="gallery-item" href="#"><img src="../Poze/c7.png" alt="Headshot of John Tyler"><span class="text-wrapper"><span class="name">Lily Duff</span><span class="title">Doar un caine</span></span></a>
+          
+              <a class="gallery-item" href="#"><img src="../Poze/c8.png" alt="Headshot of James Polk"><span class="text-wrapper"><span class="name">Letha Margret</span><span class="title">Designer</span></span></a>
+          
+              <a class="gallery-item" href="#"><img src="../Poze/c9.png" alt="Headshot of Zachary Taylor"><span class="text-wrapper"><span class="name">Taurus Duff</span><span class="title">Inginer</span></span></a>
+              <a class="gallery-item" href="#"><img src="../Poze/c10.png" alt="Headshot of Zachary Taylor"><span class="text-wrapper"><span class="name">Margaret Diss</span><span class="title">Doctor</span></span></a>
+              <a class="gallery-item" href="#"><img src="../Poze/c11.png" alt="Headshot of Zachary Taylor"><span class="text-wrapper"><span class="name">Dina Negrette</span><span class="title">Arhitect</span></span></a>
+
+              <a class="gallery-item" href="#"><img src="../Poze/c12.png" alt="Headshot of James Polk"><span class="text-wrapper"><span class="name">Marco Sylas</span><span class="title">Hacker</span></span></a>
+
+              <a class="gallery-item" href="#"><img src="../Poze/c13.png" alt="Headshot of James Polk"><span class="text-wrapper"><span class="name">Plumbob</span><span class="title">Fulltime robot</span></span></a>
+
+              <a class="gallery-item" href="#"><img src="../Poze/c14.png" alt="Headshot of James Polk"><span class="text-wrapper"><span class="name">Maria Sanders</span><span class="title">Muzician/Celebritate</span></span></a>
+
+              <a class="gallery-item" href="#"><img src="../Poze/c15.png" alt="Headshot of James Polk"><span class="text-wrapper"><span class="name">Jess Baker</span><span class="title">Jurnalist</span></span></a>
+            </div>
+            
+          </div>
+    </body>
+</html>

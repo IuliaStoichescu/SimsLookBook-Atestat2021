@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    h1{ position: relative;
+        margin: 1rem 0 0;
+        font-family: 'Luckiest Guy', cursive;font-style: italic; 
+        color: rgb(255, 255, 255);
+        z-index: 2;
+        text-shadow:  0 0 15px rgb(247, 254, 255); font-size: xxx-large ;}
+            ::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #acf5f1; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 171, 107); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 161, 239); 
+}
+            html {
+  height:100%;
+}
+
+ body{ font-style: italic;
+  text-align: center;
+  justify-content: center;
+  align-items: center;  
+  min-height: 100vh;
+  background: radial-gradient(ellipse at bottom, #dfbfff 0%,#ff97dc 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 12%;
+}
+    * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  align-content: center;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: 225px; width: 300px;
+        border-radius: 50%;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ff9963;
+  border-radius: 50%; height: 225px; width: 300px;
+}
+.overlay1{  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%; 
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #99d8fa;border-radius: 50%;height: 225px; width: 300px;}
+
+  .overlay2{  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0; 
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #fdb6f2;border-radius: 50%;height: 225px; width: 300px;}
+  .overlay3{  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0; 
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #99faa9;border-radius: 50%;height: 225px; width: 300px;}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+.container:hover .overlay1 {
+  opacity: 1;
+}
+.container:hover .overlay2 {
+  opacity: 1;
+}
+.container:hover .overlay3 {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<pre><h1>Alege-ți preferința</h1></pre>
+<HR width="30%" color="white" size="1" align="center"> 
+    <br    />
+    <div class="row">
+     <div class="column">
+<div class="container">
+  <img src="../Poze/toamna.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text"><a href="toamna.html" target="index">Toamna🍂</a></div>
+  </div>
+</div>
+</div>
+<div class="column">
+<div class="container">
+    <img src="../Poze/iarna.jpg" alt="Avatar" class="image">
+    <div class="overlay1">
+      <div class="text"><a href="iarna.html" target="index">Iarna❄️</a></div>
+    </div>
+  </div></div></div>
+  <div class="row">
+    <div class="column">
+  <div class="container">
+    <img src="../Poze/primavara.jpg" alt="Avatar" class="image">
+    <div class="overlay2">
+      <div class="text"><a href="primavara.html" target="index">Primavara🌸</a></div>
+    </div>
+  </div>
+    </div>
+  <div class="column">
+  <div class="container">
+    <img src="../Poze/vara.jpg" alt="Avatar" class="image">
+    <div class="overlay3">
+      <div class="text"><a href="vara.html" target="index">Vara🏊</a></div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sims 3 Seasons🍂❄️🌸🍃</title>
+<style> 
+   a:link {
+  color: rgb(242, 89, 216);
+}  
+a:visited {
+  color: rgb(75, 233, 230);
+}
+a:hover {
+  color: rgb(139, 81, 233);
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+
+::-webkit-scrollbar-thumb {
+  background: rgb(171, 233, 83); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ae7b1c; 
+}
+
+body {
+  font-family: Verdana, sans-serif;
+    background:
+        linear-gradient(rgb(220, 101, 101), transparent),
+        linear-gradient(to top left, lime, transparent),
+        linear-gradient(to top right, rgb(195, 94, 228), transparent);
+        background-blend-mode: screen;
+    background-repeat: no-repeat;
+    background-size: cover;     color: #fff;
+        z-index: 2;
+        text-shadow:  0 0 15px rgb(255, 255, 255);
+        margin: 0 8%;
+}
+h1{  font-family: 'Luckiest Guy', cursive;font-style: italic; }
+p{font-family: 'Luckiest Guy', cursive;font-style: italic;}
+li{font-family: 'Luckiest Guy', cursive;font-style: italic;}
+
+* {
+  box-sizing: border-box;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>
+<body>
+
+<h1 style="text-align:center">Anotimpuri</h1>
+
+<div class="row">
+  <div class="column">
+    <img src="../Poze/toamna1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="../Poze/iarna1.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="../Poze/prim.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="../Poze/var.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="../Poze/toamna1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="../Poze/iarna1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="../Poze/prim.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="../Poze/var.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="../Poze/toamna1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Toamnă">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../Poze/iarna1.jpg" style="width:100%" onclick="currentSlide(2)" alt="Iarnă">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../Poze/prim.jpg" style="width:100%" onclick="currentSlide(3)" alt="Primăvară">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../Poze/var.jpg" style="width:100%" onclick="currentSlide(4)" alt="Vară">
+    </div>
+  </div>
+</div>             <p style="text-align:center">,,Lasă-i pe Simși să înoate în ocean într-o zi fierbinte de vară, să caute mere în frunzele de toamnă, să-și testeze abilitățile de snowboarding pe jumătate de țeavă sau să întâmpine dușuri de primăvară cu o plimbare în ploaie și o umbrelă colorată. Activitățile noi, cum ar fi fotbalul, festivalurile mari de sezon și sărbătorile, dau viață spiritului fiecărui sezon. Simșii tăi se pot ridica la standul de sărutări de la festivalul de primăvară sau pot vedea ce surprize de Halloween așteaptă în casa bântuită. Îmbrăcați-vă pentru vreme cu modele sezoniere, de la rochii de soare la haine de ploaie și echipamente de zăpadă. Cu alimente noi, decor și efecte meteorologice, Simșii se pot bucura de recompensa și frumusețea anotimpurilor în continuă schimbare și se pot juca cu viața ca niciodată!"</p>
+                 <br   />
+            <h1>Despre</h1> 
+            <HR width="100%" color="white" size="1" align="left">
+                <p><u><b>The Sims 3 Seasons</b></u> este al optulea pachet de expansiune pentru The Sims 3. După zvonurile inițiale, EA a confirmat existența pachetului printr-o postare online pe site-ul lor web pe 1 august 2012, urmată de o prezentare de vară pe 2 august 2012, care a confirmat oficial pachetul și a lansat primul trailer oficial al acestuia. Seasons a fost lansat pe 13 noiembrie 2012 în America de Nord și pe 16 noiembrie 2012 în Europa.</p>     
+                <div style="text-align:center;"> <iframe width="1500" height="650" src="https://www.youtube.com/embed/45CD_binKHY"></iframe></div>
+                <br  />
+                <h1> Caracteristicile jocului</h1> 
+                <HR width="50%" color="white" size="1" align="left"> 
+                    <p>
+                        ○ Bucurați-vă de Sims cu noi activități pentru fiecare anotimp: indiferent dacă construiți un iglu intim, să sculptați un felinar înfricoșător Jack o ', să vă aruncați de pe scufundare sau să lansați focuri de artificii noi, Sim-ul dvs. poate găsi întotdeauna lucruri noi de făcut pe tot parcursul anul.</p>
+                     <p> ○ Alăturați-vă distracției cu festivaluri sezoniere: Simulatorii se pot lupta cu bulgări de zăpadă la festivalul anual de iarnă, își pot vopsi fețele la festivalul de vară, îl pot arunca la dansul de primăvară sau pot trece la mere în timpul festivalului de toamnă.</p>  
+                     <p>  ○ Experimentați bucuriile și provocările schimbării vremii: Noile efecte meteorologice și reacțiile Sim captează puterea și frumusețea naturii! Simsii se pot bronza, pot fi loviți de fulgere sau pot răci!</p> 
+                     <p style="float: right; clear: right"><img src="../Poze/lama.gif" height="250px" width="300px" border="1px"></p>
+                     <p>  ○  Aduceți exteriorul în interior: Simul dvs. poate învăța acum rețeta pentru plăcinta cu dovleac sau își poate amenaja casa cu mobilier și decor noi. Există o serie de articole noi de sunat în fiecare sezon. Obțineți un stand de bronzare la timp pentru vară sau aduceți spiritul sărbătorilor cu lumini și decorațiuni de casă.</p>
+                      <p> ○ Îmbrăcați-vă pentru vreme: Îmbrăcați-vă Sim-ul în stiluri noi pentru sezon, inclusiv echipament de zăpadă, costume de baie, haine de ploaie, umbrele și costume noi de Halloween!</p> 
+                     <p>  ○ Bine ați venit vizitatori misterioși: noile modele meteorologice nu sunt singurele lucruri care apar pe cer! Împrieteniți-vă cu un vizitator extraterestru și folosiți OZN-ul lor pentru a răpi un vecin, a invada un lot comunitar sau a călători la stele.</p> 
+                 <p>    ○ Relaxați-vă în stil în ediția limitată Ice Lounge: lăsați-vă Sims-urile să se distreze în stil cu barul de gheață elegant, scaunul de bar și masa de pub. Obiecte precum scaunul de masă cu gheață, masa de luat masa, măsuța de cafea, canapeaua și scaunul pentru copii pot adăuga un stil distinctiv oricărei camere din casa Sims-ului. Lounge-ul cu gheață include, de asemenea, elemente arhitecturale pentru a adăuga o notă subtilă de stil clădirilor Sims-ului tău.</p> 
+                      <p> ○ Sărbători: puteți sărbători o zi înfricoșătoare toamna, o zi de agrement vara, o zi de dragoste primăvara și o zi cu fulgi de zăpadă iarna.</p>
+                      <br   />
+                      <h1>Detalii</h1> 
+                      <HR width="50%" color="white" size="1" align="left"> 
+                        <br   />
+                        <ul type="square"> 
+                            <li>
+                                <b>Înotul Oceanului</b>
+                               <ul type="circle"> 
+                              <li> Simsii pot înota în oceane lângă plaje și zone de coastă și pot face acest lucru pe tot parcursul anului.</li> 
+                             <li>Poate fi realizat în orice lume, inclusiv personalizate, World Adventures și lumi de magazine.</li>   
+                            <li> Simsii nu pot înota pe căi navigabile / lacuri în niciun lot. </li>   
+                             <li> Simsii nu pot să se scufunde în ocean.</li> 
+                           
+                             <li> Animalele de companie nu pot înota în ocean. </li>  
+                            <li> Simsii tai pot curaja chiar și apele înghețate în timpul iernii, în căutarea spiritului Polar Bear Club.</li>   
+                              <li> Oceanul va îngheța când temperatura scade suficient de scăzută iarna, împiedicând Sims să înoate.</li>  <p style="float: left; clear: left"><img src="../Poze/swim.jpg" height="250px" width="300px" border="1px"></p>
+                              <li> Simsii vor putea înota într-un corp de apă, chiar dacă are vopsea irecuperabilă așezată sub apă. Există un alt tip de vopsea care poate fi folosit în jurul marginilor lumii pentru a împiedica camera să meargă prea departe, astfel încât să nu poată înota dincolo de acel punct.</li> 
+                              <li>Atâta timp cât oceanul, râul sau lacul nu se află pe un lot rezidențial sau comunitar, are o pantă treptată în apă, iar Simsii tai pot merge până la coastă, apoi se pot arunca cu capul chiar în interior! </li>  
+                              <li> Simsii își pot dobândi abilitățile sportive, dar pot pierde energie, putând provoca oboseală. </li> 
+                             <li>Simsii nu se pot îneca atunci când înoată în ocean. (Din punct de vedere tehnic, acest lucru se datorează incapacității pietrelor funerare de a fi reprodus în afara loturilor.) </li>   
+                           </ul> </li>
+                           <br   />
+                        <li><b>Scufundări</b>
+                          
+                            <ul type="circle">
+                                <li> Plăcile de scufundare sunt adăugate în joc, ceea ce le permite Sim-urilor să se scufunde în piscine.</li>
+                      <li>  Simsii pot intra în piscină, fie făcând o stropire mare, fie scufundându-se cu grație. picaj. - miscari de cascadorie</li>
+                         <li>   Cu cât Sim este mai mare, cu atât va fi mai mare stropirea pe care Sim o va face în piscină.    </ul>  </li> 
+                         
+                       
+                          <li><b>Snowboarding</b>
+                          <ul type="circle"> <li>Simsii pot face snowboard pe jumătăți de țevi.</li>
+                         <li>Simsii pot face snowboard pe tot parcursul anului, deoarece zăpada artificială va fi pe jumătate de țevi atunci când zăpada nu este pe sol.</li>   
+                        <li> Descriere: Simsii dvs. se pot îndrepta spre festivalul de iarnă sau pot coborî în jumătatea de snowboard în propriile lor curți pentru a începe să învețe cum să facă snowboard! Practica face perfect; cu cât Sims-urile dvs. petrec mai mult timp pe half-pipe, cu atât vor primi mai bine și cu atât mai EPIC vor fi trucurile pe care le vor putea face!</li>   </ul> </li>  
+                           <li> <b>Boală</b>
+                            <ul type="circle">
+                            Sănătatea simsiilor poate fi afectată. Exemple sunt:
+                           <li> ei pot fi arsi de soare când stau prea mult timp la soare</li>
+                        <li> Pot fi loviți de fulgere în timpul unei furtuni</li>   
+                        <li> Pot răci sau chiar gripa</li>   
+                        <li>  Pot îngheța, dar alți Sim pot să le încălzească</li>  
+                          <li> pot face alergii sezoniere, dar pot fi vaccinați. De asemenea, aceștia pot face o vacă împotriva gripei, care este un remediu pentru gripă.</li>   
+                         <li>Copiii și adolescenții nu vor primi automat ziua liberă când sunt bolnavi, cu toate acestea, notele lor nu vor avea de suferit dacă vor alege să rămână acasă în acea zi.</li>   
+                       <li>  Sim-urile care lucrează acum au opțiunea de a suna la serviciu in caz de boala sau o pot falsifica</li>   
+                        </ul></li>
+                         </ul>
+                         <br   />
+                         <h1>Vremea</h1> 
+                         <HR width="50%" color="white" size="1" align="left">   
+                            <p>Există cinci tipuri de vreme. Vremea va fi disponibilă și va funcționa în același mod cu magazinele și lumile personalizate.</p>
+
+                               <p><b> -Ploaia</b>: Diferite grade de ploaie (ploaie slabă, regulată, furtună cu fulgere).</p>
+                              <p> ○  Simulatorii se pot stropi în bălți pentru un pic de distracție, ceea ce poate ajuta la stingerea focurilor în orașul lor sau la udarea plantelor lor.</p> <p style="float: right; clear: right"><img src="../Poze/ploua.jpg" height="250px" width="400px" border="1px"></p>
+                              <p>  ○  Simulatorii sunt capabili să sară pe bălțile de apă create de ploaie.</p>
+                               <p>○ "De fapt, poate ploua în orice moment al anului. Cu toate acestea, frecvența va fi diferită pentru fiecare anotimp. Dacă temperatura este peste îngheț în timpul iernii, veți vedea și ploaie."</p>  
+                              <p> ○  „Va ploua mai mult primăvara, dar va ploua încă vara ocazional.”</p> 
+                              <p> ○  S-ar putea să auzi tunetele și să vezi fulgere când furtunile sunt foarte rele.</p> 
+                               <p>○  SimBots pot interacționa cu ploaia. Este mai bine să fie atenți înainte de a ieși în condiții meteorologice nefavorabile.</p> 
+                              <p>  ○  Când plouă, Sim-urile care plutesc pe gonflabile în ocean vor ajunge la țărm și își vor ridica umbrelele. </p>
+                               
+                             <p> <b></b>-Soare</b></p>  
+                            <p> <b>-Grindină</b></p>   
+                            <p><b> -Zăpadă</b>  </p> 
+                              <p><b> -Furtuni de zăpadă</b></p> 
+                              <p><b> -Ceata</b></p> 
+                              <p><b> -Tunete si fulgere</b></p> 
+                              <h1>Imagini</h1> 
+                              <HR width="50%" color="white" size="1" align="left"> 
+                                <br  /> 
+                                <div class="row">
+                                    <div class="column">
+                                      <img src="../Poze/dovlecel.jpg" style="width:100%"  class="hover-shadow cursor">
+                                    </div>
+                                    <div class="column">
+                                      <img src="../Poze/iarna2.jpg" style="width:100%"  class="hover-shadow cursor">
+                                    </div>
+                                    <div class="column">
+                                      <img src="../Poze/iarna3.jpg" style="width:100%"  class="hover-shadow cursor">
+                                    </div>
+                                    <div class="column">
+                                      <img src="../Poze/ploaie.jpg" style="width:100%"  class="hover-shadow cursor">
+                                    </div></div>
+                                    <div class="row">
+                                    <div class="column">
+                                        <img src="../Poze/mere.jpg" style="width:100%"  class="hover-shadow cursor"> </div>
+                                        <div class="column">
+                                            <img src="../Poze/concurs.jpg" style="width:100%"  class="hover-shadow cursor"> </div>
+                                            <div class="column"> 
+                                                <img src="../Poze/alien.jpg" style="width:100%"  class="hover-shadow cursor"> </div>
+                                                <div class="column">
+                                                    <img src="../Poze/rechini.jpg" style="width:100%" class="hover-shadow cursor">
+                                                  </div> 
+                                    </div>
+                                    <div class="row">
+                                                  <div class="column">
+                                                    <img src="../Poze/inghet.jpg" style="width:100%" class="hover-shadow cursor">
+                                                  </div>
+                                                  <div class="column">
+                                                    <img src="../Poze/sarbatoare.jpg" style="width:100%" class="hover-shadow cursor">
+                                                  </div>
+                                                  <div class="column">
+                                                    <img src="../Poze/ingerasi.jpg" style="width:100%"  class="hover-shadow cursor">
+                                                  </div>
+                                                  <div class="column">
+                                                    <img src="../Poze/snow.jpg" style="width:100%"  class="hover-shadow cursor">
+                                                  </div>
+                                  </div>
+                                  </div>
+                                  <br   />
+                                  <h1>Festivaluri sezoniere</h1> 
+                                  <HR width="50%" color="white" size="1" align="left">  
+                                    <br  />
+                                    <p>Festivalurile pot funcționa în lumea Custom și Store.</p>
+<p>-Fiecare festival, unic sezonului, va transforma lumea Sim-ului complet cu obiecte și decorațiuni noi pe tot parcursul anului.</p>
+<p>-Fiecare festival are activități pline de distracție pentru Sims, cum ar fi competiții.</p>
+<p>-Fiecare festival are un stand de felicitări unde Sims poate face fotografii cu familia sau prietenii.</p>
+<p>-Simsii se adună la festivități pentru activități sezoniere, mâncare, decorațiuni, obiecte și costume. Exemple de astfel de activități în timpul acestor festivaluri sunt:</p>
+<p>○ Concursuri de mâncare</p>
+<p>○ Sculptarea dovlecilor</p>
+<p>○ Patinaj</p>          <p style="float: right; clear: right"><img src="../Poze/iepure.gif" height="250px" width="400px" border="1px"></p>
+<p>○ Pictarea fețelor</p>
+<p>○ Vizionarea focurilor de artificii</p>
+<p>○ Dezactivarea opțiunilor meteo nu afectează festivalurile.</p>
+<p>○ Dacă jucătorul dezactivează un sezon, va trece peste acea versiune a festivalului.</p>
+<p>○ Bilete la festival</p>
+<p>○ Simulatorii îi vor primi dacă participă la orice activitate a festivalului</p>
+<p>○ Ele pot fi răscumpărate pentru articole la standurile de concesiune.  </p>
+                        <a href="index.html">înapoi</a>
+                                  
+                                  
+                                   
+                                  
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>
